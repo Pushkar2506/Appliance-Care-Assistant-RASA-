@@ -1,0 +1,33 @@
+version: "3.1"
+
+rules:
+  - rule: Greet the user
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_ask_appliance
+
+  - rule: Ask for the brand
+    steps:
+      - intent: select_appliance
+      - action: utter_ask_brand
+
+  - rule: Ask for the issue
+    steps:
+      - intent: provide_brand
+      - action: utter_ask_issue
+
+  - rule: Provide solution and ask for booking
+    steps:
+      - intent: provide_issue
+      - action: action_provide_solution
+
+  - rule: Thank the user for booking
+    steps:
+      - intent: affirm
+      - action: action_book_ticket
+
+  - rule: Handle denial of booking
+    steps:
+      - intent: deny
+      - action: action_deny_booking

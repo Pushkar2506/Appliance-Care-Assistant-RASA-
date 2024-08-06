@@ -1,0 +1,18 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhODUnNbkkPrGgICczMS85tbY2FgAyHx/6": "utter_ask_brand",
+    "eJyNjMEJgDAMAFfJAE7QVURCrHkEayxN6qd0dwv6198dHDe3PkHLhS+k6HJqgPYAKh0c4JUk5qyjrcZlNKJDPYBx4uhIOSchjdw/dtWdC5LtuBbS7c9wuQE5FT8P": "action_listen",
+    "eJyljkEKhTAMRK/SA3iCXkUkxDqL8GssaXRTencL370Ld/NgeDNz61NoxXARJ5dDY2j/QMo7YnggS3Xo6J4VNjqiAz2GiozkxKVkYU3oL7rTHUZcf7Qa6/Zd+PKv2HHJhmetLzdCcVwr": "utter_ask_issue",
+    "eJyljsEJAzEMBFtxAanArYQgFN8+RBydkeT7mOs9htzfgfx2YZmd+zhvaTTDQVxCds1pfAMpv5HTVap4QOe2O2xuRGeNnBwVJYhbq8JacC5wPQJG7C96Guv2P3Dh12w/ZMP19rOcuHcsaY8P64R6NQ==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhoCi/LDMlNT6zuLg0tbY2FgDVYR7v": "action_provide_solution",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhoCi/LDMlNT6zuLg0tZY4s2B6ivNzSkECBE2NBQDU50Bz": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhoCi/LDMlNT6zuLg0tZY4s2B6ivNzSkEC1DEVlwtTUvMqa2tjAQzvWeA=": "action_deny_booking",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhoCi/LDMlNT6zuLg0tZY4s2B6ivNzSkEC1DEVlwtTUvMqiTQCpDQ+KT8/OzMvHZdBsQCs/3W2": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhoCi/LDMlNT6zuLg0tZY4s2B6ivNzSkEC1DEVlwsT09Iyi3Jra2MBwURapQ==": "action_book_ticket",
+    "eJytjlEKgCAQRK/iATqBV4kQqxWW0g139Ue8e0b1KfTR38ww85ix1EGVI0I2dhGkoFW5hQnWg1aP2ZEFQusmhtg6GJoVrY5IGVcwyJygfmO9G6Y9XcE/1N5D6xxG/xEyE21GcNlA+qTpBA7UdtY=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "utter_ask_appliance",
+    "eJyljMEJgDAMAFfJAE7QVURCKEGCGkua+ind3UL9ig9/d3DcXNsENRlfSNHl1AB1ACodHOCRXbKz9rZktt6IdvUAqzF7+3gUdzYc6Z8D5Q0ppV1II7+elhuUPVDd": "action_listen"
+  }
+}

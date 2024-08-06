@@ -1,0 +1,29 @@
+version: "3.1"
+
+stories:
+  - story: User greets and mentions washing machine
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_ask_appliance
+
+  - story: User provides appliance and brand
+    steps:
+      - intent: select_appliance
+      - action: utter_ask_brand
+      - intent: provide_brand
+      - action: utter_ask_issue
+
+  - story: User provides issue and books ticket
+    steps:
+      - intent: provide_issue
+      - action: action_provide_solution
+      - intent: affirm
+      - action: action_book_ticket
+
+  - story: User provides issue and denies booking
+    steps:
+      - intent: provide_issue
+      - action: action_provide_solution
+      - intent: deny
+      - action: action_deny_booking

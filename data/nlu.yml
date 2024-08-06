@@ -1,0 +1,61 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hello
+      - hi
+      - hey
+      - good morning
+      - good evening
+
+  - intent: select_appliance
+    examples: |
+      - Television
+
+  - intent: provide_brand
+    examples: |
+      - LG
+      - Panasonic
+      - Videocon
+      - Micromax
+      - Samsung
+      - Onida
+      - OnePlus
+      - Philips
+      - Sansui
+      - Sony
+      - Toshiba
+      - VU
+      - Weston
+      - Xiaomi
+
+  - intent: provide_issue
+    examples: |
+      - Television not starting
+      - TV has sound but no picture
+      - Multiple vertical lines run across the screen
+      - TV has a picture, but no sound
+      - TV flickers and turns off suddenly
+      - The picture is unnaturally long or squeezed
+      - Half the screen is grayed out
+      - The remote control isn’t working properly
+      - TV won’t power up but the power light blinks
+      - Image Is Breaking Up Or Pixelating.
+      - The Screen Of The TV Is Grainy.
+
+  - intent: affirm
+    examples: |
+      - yes
+      - sure
+      - please do
+      - go ahead
+
+  - intent: deny
+    examples: |
+      - no
+      - not now
+      - maybe later
+      - I don't want to book a ticket
+      - Not interested
+      - No, thanks

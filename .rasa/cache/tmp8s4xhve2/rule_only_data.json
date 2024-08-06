@@ -1,0 +1,8 @@
+{
+  "rule_only_slots": [],
+  "rule_only_loops": [
+    "utter_provide_link",
+    "utter_suggest_smartphone",
+    "action_suggest_smartphone"
+  ]
+}

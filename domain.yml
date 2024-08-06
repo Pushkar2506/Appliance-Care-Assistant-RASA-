@@ -1,0 +1,73 @@
+version: "3.1"
+
+intents:
+  - greet
+  - select_appliance
+  - provide_brand
+  - provide_issue
+  - affirm
+  - deny
+
+entities:
+  - appliance
+  - brand
+  - issue
+
+slots:
+  appliance:
+    type: text
+    mappings:
+      - type: from_text
+
+  brand:
+    type: text
+    mappings:
+      - type: from_text
+
+  issue:
+    type: text
+    mappings:
+      - type: from_text
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you today?"
+
+  utter_ask_appliance:
+    - text: "Which appliance are you having an issue with?"
+
+  utter_ask_brand:
+    - text: "Kindly mention the brand (LG, Panasonic, Samsung, Videocon, etc.)"
+
+  utter_ask_issue:
+    - text: |
+        Thank You!! 
+        Please select the issue you are facing:
+        1. Television not starting
+        2. TV has sound but no picture
+        3. Multiple vertical lines run across the screen
+        4. TV has a picture, but no sound
+        5. TV flickers and turns off suddenly
+        6. The picture is unnaturally long or squeezed
+        7. Half the screen is grayed out
+        8. The remote control isn’t working properly
+        9. TV won’t power up but the power light blinks
+        10. Image Is Breaking Up Or Pixelating.
+        11. The Screen Of The TV Is Grainy.
+
+  utter_provide_solution:
+    - text: |
+        The possible causes for {issue} could be: {causes}
+        The estimated cost for repairing or replacing {issue_part} is approximately {cost_estimate}.
+        Would you like to book a ticket with us?
+
+  utter_thank_for_booking:
+    - text: "Thank you for booking a ticket with us!"
+
+  utter_deny_booking:
+    - text: "No problem! If you need any further assistance, feel free to ask."
+
+actions:
+  - action_provide_solution
+  - action_book_ticket
+  - action_deny_booking

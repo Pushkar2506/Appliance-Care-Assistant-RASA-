@@ -1,0 +1,61 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"specify_purpose\"}}]": "utter_ask_price_range",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"specify_purpose\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_price_range\"}, \"user\": {\"intent\": \"specify_purpose\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"utter_provide_link\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"deny_purchase\"}}]": "action_show_another",
+      "[{\"active_loop\": {\"name\": \"utter_provide_link\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"deny_purchase\"}}, {\"active_loop\": {\"name\": \"utter_provide_link\"}, \"prev_action\": {\"action_name\": \"action_show_another\"}, \"user\": {\"intent\": \"deny_purchase\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"utter_provide_link\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"affirm_purchase\"}}]": "utter_provide_link",
+      "[{\"active_loop\": {\"name\": \"utter_provide_link\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"affirm_purchase\"}}, {\"active_loop\": {\"name\": \"utter_provide_link\"}, \"prev_action\": {\"action_name\": \"utter_provide_link\"}, \"user\": {\"intent\": \"affirm_purchase\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"specify_price_range\"}}]": "utter_suggest_smartphone",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"specify_price_range\"}}, {\"prev_action\": {\"action_name\": \"utter_suggest_smartphone\"}, \"user\": {\"intent\": \"specify_price_range\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"utter_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"show_another\"}}]": "action_show_another",
+      "[{\"active_loop\": {\"name\": \"utter_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"show_another\"}}, {\"active_loop\": {\"name\": \"utter_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_show_another\"}, \"user\": {\"intent\": \"show_another\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "utter_iamabot",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"action_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"want_to_buy\"}}]": "utter_provide_link",
+      "[{\"active_loop\": {\"name\": \"action_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"want_to_buy\"}}, {\"active_loop\": {\"name\": \"action_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"utter_provide_link\"}, \"user\": {\"intent\": \"want_to_buy\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"buy_smartphone\"}}]": "utter_ask_purpose",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"buy_smartphone\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_purpose\"}, \"user\": {\"intent\": \"buy_smartphone\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"action_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"show_another\"}}]": "action_show_another",
+      "[{\"active_loop\": {\"name\": \"action_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"show_another\"}}, {\"active_loop\": {\"name\": \"action_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_show_another\"}, \"user\": {\"intent\": \"show_another\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [
+      "utter_suggest_smartphone",
+      "utter_provide_link",
+      "action_suggest_smartphone"
+    ],
+    "rules_for_loop_unhappy_path": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"utter_provide_link\"}, \"prev_action\": {\"action_name\": \"action_show_another\"}, \"user\": {\"intent\": \"deny_purchase\"}}]": "do_not_predict_loop_action",
+      "[{\"active_loop\": {\"name\": \"utter_provide_link\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"affirm_purchase\"}}]": "loop_was_interrupted",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"utter_provide_link\"}, \"prev_action\": {\"action_name\": \"utter_provide_link\"}, \"user\": {\"intent\": \"affirm_purchase\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"utter_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_show_another\"}, \"user\": {\"intent\": \"show_another\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"action_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"utter_provide_link\"}, \"user\": {\"intent\": \"want_to_buy\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"action_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_show_another\"}, \"user\": {\"intent\": \"show_another\"}}]": "do_not_predict_loop_action"
+    },
+    "rules_not_in_stories": [
+      "[{\"active_loop\": {\"name\": \"utter_provide_link\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"deny_purchase\"}}, {\"active_loop\": {\"name\": \"utter_provide_link\"}, \"prev_action\": {\"action_name\": \"action_show_another\"}, \"user\": {\"intent\": \"deny_purchase\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "handling active loops and forms - utter_provide_link - action_listen",
+      "[{\"active_loop\": {\"name\": \"action_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"want_to_buy\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "predicting default action with intent back",
+      "[{\"active_loop\": {\"name\": \"action_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"want_to_buy\"}}, {\"active_loop\": {\"name\": \"action_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"utter_provide_link\"}, \"user\": {\"intent\": \"want_to_buy\"}}]",
+      "[{\"active_loop\": {\"name\": \"action_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"show_another\"}}, {\"active_loop\": {\"name\": \"action_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_show_another\"}, \"user\": {\"intent\": \"show_another\"}}]",
+      "[{\"active_loop\": {\"name\": \"action_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"show_another\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"active_loop\": {\"name\": \"utter_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"show_another\"}}, {\"active_loop\": {\"name\": \"utter_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_show_another\"}, \"user\": {\"intent\": \"show_another\"}}]",
+      "[{\"active_loop\": {\"name\": \"utter_provide_link\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"deny_purchase\"}}]",
+      "handling active loops and forms - utter_provide_link",
+      "[{\"active_loop\": {\"name\": \"utter_suggest_smartphone\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"show_another\"}}]",
+      "predicting default action with intent restart"
+    ]
+  }
+}
